@@ -179,9 +179,7 @@ $$
 The ATE is estimated via:
 
 $$
-\hat{\tau}_{\text{ML}} = \frac{1}{n} \sum_{i=1}^{n} \left( \hat{m}_1(X_i) - \hat{m}_0(X_i) \right)
-+ \frac{D_i}{\hat{p}_1}(Y_i - \hat{m}_1(X_i))
-- \frac{1 - D_i}{\hat{p}_0}(Y_i - \hat{m}_0(X_i)),
+\hat{\tau}\_{\text{ML}} = \frac{1}{n} \sum_{i=1}^{n} \left( \hat{m}\_1(X_i) - \hat{m}\_0(X_i) \right) + \frac{D_i}{\hat{p}\_1}(Y_i - \hat{m}\_1(X_i)) - \frac{1 - D_i}{\hat{p}\_0}(Y_i - \hat{m}\_0(X_i)),
 $$
 
 where $\hat{m}_d(X_i)$ is the predicted outcome under treatment $d$, and $\hat{p}_d$ is the empirical treatment probability and $n=n_1+n_0$.
