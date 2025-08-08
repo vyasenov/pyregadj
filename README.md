@@ -101,9 +101,8 @@ When properly implemented, randomization ensures this assumption is satisfied. U
 
 This estimator compares average outcomes in the treatment and control groups:
 
-\begin{equation*}
-\hat{\tau}_{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.
-\end{equation*}
+$$
+\hat{\tau}_{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.$$
 
 A two-sample $t$-test with pooled variance is used to construct standard errors and confidence intervals:
 
