@@ -162,7 +162,7 @@ $$
 
 where 
 
-$$ \hat{\sigma}_{\text{grp}}^2 = \frac{(n_1 - 1)s_{\hat{\varepsilon}_1}^2 + (n_0 - 1)s_{\hat{\varepsilon}_0}^2}{n_1 + n_0 - 2}.
+$$ \hat{\sigma}\_{\text{grp}}^2 = \frac{(n_1 - 1)s\_{\hat{\varepsilon}_1}^2 + (n_0 - 1)s\_{\hat{\varepsilon}_0}^2}{n_1 + n_0 - 2}.
 $$
 
 We now use the variance of the estimated residuals $\hat{\varepsilon}_1$, and $\hat{\varepsilon}_0$. This estimator allows covariate effects to differ by treatment group and may improve robustness and precision (similar to Lin (2013)).
