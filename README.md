@@ -148,7 +148,7 @@ $$
 The ATE is estimated as:
 
 $$
-\hat{\tau}_{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}_0(X_i),
+\hat{\tau}\_{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}\_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}\_0(X_i),
 $$
 
 where $\hat{\mu}_d(X_i)$ is the predicted outcome for group $d$ with covariate values $X_i$. 
