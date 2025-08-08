@@ -179,10 +179,10 @@ $$
 The ATE is estimated via:
 
 $$
-\hat{\tau}\_{\text{ML}} = \frac{1}{n} \sum_{i=1}^{n} \left( \hat{m}\_1(X_i) - \hat{m}\_0(X_i) \right) + \frac{D_i}{\hat{p}\_1}(Y_i - \hat{m}\_1(X_i)) - \frac{1 - D_i}{\hat{p}\_0}(Y_i - \hat{m}\_0(X_i)),
+\hat{\tau}\_{\text{ML}} = \frac{1}{n} \sum_{i=1}^{n} \left( \hat{m}\_1(X_i) - \hat{m}\_0(X_i) \right) + \frac{D_i \times n}{n\_1}(Y_i - \hat{m}\_1(X_i)) - \frac{(1 - D_i)\times n}{n\_0}(Y_i - \hat{m}\_0(X_i)),
 $$
 
-where $\hat{m}_d(X_i)$ is the predicted outcome under treatment $d$, and $\hat{p}_d$ is the empirical treatment probability and $n=n_1+n_0$.
+where $\hat{m}_d(X_i)$ is the predicted outcome under treatment $d$, and $n=n_1+n_0$.
 
 When `cross_fit=True`, predictions are obtained via sample-splitting and $K$-fold cross-fitting to mitigate overfitting. This means predictions for each unit $i$ are from models trained without $i$’s fold.
 
@@ -195,7 +195,7 @@ $$
 where
 
 $$
-\hat{\sigma}^2_{\text{ML}} = \widehat{\mathrm{Var}}\!\big(IF_{1} - IF_{0}\big),
+\hat{\sigma}^2_{\text{ML}} = \widehat{\mathrm{Var}}\big(IF_{1} - IF_{0}\big),
 $$
 
 and $\text{IF}_d$ is the respective IF for group $d$. 
