@@ -201,7 +201,7 @@ Y = D \cdot Y(1) + (1 - D) \cdot Y(0),
 <section id="unadjusted-estimator" class="level3">
 <h3 class="anchored" data-anchor-id="unadjusted-estimator">Unadjusted Estimator</h3>
 <p>This estimator compares average outcomes in the treatment and control groups:</p>
-<p><span class="math display">\[\hat{\tau}_{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.\]</span></p>
+<p><span class="math display">\[\hat{\tau}{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.\]</span></p>
 <p>A two-sample <span class="math inline">\(t\)</span>-test with pooled variance is used to construct standard errors and confidence intervals:</p>
 <p><span class="math display">\[
 SE_{\text{unadj}} = \sqrt{ \hat{\sigma}_{\text{unadj}}^2 \left( \frac{1}{n_1} + \frac{1}{n_0} \right) },
@@ -233,7 +233,7 @@ Y = \alpha_d + X^\top \beta_d + \varepsilon_d, \quad \text{for } D = d \in \{0,1
 \]</span></p>
 <p>The ATE is estimated as:</p>
 <p><span class="math display">\[
-\hat{\tau}_{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}_0(X_i),
+\hat{\tau}{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}_0(X_i),
 \]</span></p>
 <p>where <span class="math inline">\(\hat{\mu}_d(X_i)\)</span> is the predicted outcome for group <span class="math inline">\(d\)</span> with covariate values <span class="math inline">\(X_i\)</span>.</p>
 <p>Standard errors are computed using residual variances from the two regressions.</p>

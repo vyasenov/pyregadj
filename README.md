@@ -101,7 +101,7 @@ When properly implemented, randomization ensures this assumption is satisfied. U
 
 This estimator compares average outcomes in the treatment and control groups:
 
-$$\hat{\tau}_{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.$$
+$$\hat{\tau}{\text{unadj}} = \frac{1}{n_1}\sum\limits_{i:D=1} Y - \frac{1}{n_0}\sum\limits_{i:D=0} Y.$$
 
 A two-sample $t$-test with pooled variance is used to construct standard errors and confidence intervals:
 
@@ -148,7 +148,7 @@ $$
 The ATE is estimated as:
 
 $$
-\hat{\tau}_{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}_0(X_i),
+\hat{\tau}{\text{grp}} = \frac{1}{n_1} \sum_{i:D=1} \hat{\mu}_1(X_i) - \frac{1}{n_0} \sum_{i:D=0} \hat{\mu}_0(X_i),
 $$
 
 where $\hat{\mu}_d(X_i)$ is the predicted outcome for group $d$ with covariate values $X_i$. 
